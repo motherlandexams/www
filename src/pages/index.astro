@@ -46,18 +46,12 @@ const what_we_offser = [
 const why_choose_us = [
   {
     title: "Innovation First",
-    description:
-      "We use AI, cloud, and automation to deliver future-ready solutions.",
+    description: "We use automation to deliver future-ready solutions.",
   },
   {
     title: "Security Guaranteed",
     description:
       "Advanced encryption, CCTV, and biometric layers ensure data safety.",
-  },
-  {
-    title: "Pan-India Presence",
-    description:
-      "Scalable infrastructure that supports thousands of candidates at once.",
   },
   {
     title: "Integrity & Transparency",
@@ -125,7 +119,8 @@ const advanced_infrastructure = [
   },
   {
     title: "Biometric & CCTV Security",
-    description: "Prevents impersonation, cheating, and ensures 100% transparency.",
+    description:
+      "Prevents impersonation, cheating, and ensures 100% transparency.",
   },
   {
     title: "Fire Safety Measures",
@@ -134,75 +129,106 @@ const advanced_infrastructure = [
 ];
 
 const extra_facilities_for_clients = [
-{
-title: "Control Room Access",
-description: "Live monitoring for exam organizers."
-}  ,
-{
-title: "Pan-India Support",
-description: "Ability to manage multi-location exams at once."
-}  ,
-{
-title: "Data Security",
-description: "Encrypted storage & transmission of exam data."
-}  ,
-{
-title: "24×7 Tech Support Team",
-description: "Engineers & IT staff available throughout the exam session."
-}  ,
-]
+  {
+    title: "Control Room Access",
+    description: "Live monitoring for exam organizers.",
+  },
+  {
+    title: "Pan-India Support",
+    description: "Ability to manage multi-location exams at once.",
+  },
+  {
+    title: "Data Security",
+    description: "Encrypted storage & transmission of exam data.",
+  },
+  {
+    title: "24×7 Tech Support Team",
+    description: "Engineers & IT staff available throughout the exam session.",
+  },
+];
 
 const why_clients_love_us = [
-"Discipline maintained by experienced invigilators.",
-"Stress-free environment with comfortable amenities.",
-"Transparent, secure, and technology-driven exam process.",
-"All-in-one center — nothing is missing for candidates or organizers."
-]
+  "Discipline maintained by experienced invigilators.",
+  "Stress-free environment with comfortable amenities.",
+  "Transparent, secure, and technology-driven exam process.",
+  "All-in-one center — nothing is missing for candidates or organizers.",
+];
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>Motherland Exams</title>
   </head>
   <body>
-    <header class="bg-indigo-50">
-      <div class="container mx-auto">
-        <nav class="flex justify-between p-4">
-          <h1 class="flex gap-1 items-center">
-            <img src="/logo.png" class="w-10 h-10" /><span>MotherLandExams</span
-            >
-          </h1>
-          <ul class="flex gap-2">
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-          </ul>
-        </nav>
-        <div class="p-4">
-          <ul>
-            <li style="min-height: 200px;" class="flex items-center">
-              <div class="space-y-4">
-                <h2 class="text-4xl font-bold">
-                  Integrity I Capability I Security
-                </h2>
-                <a
-                  href="#about"
-                  class="bg-indigo-800 text-white inline-block px-4 py-2"
-                  >Read More</a
-                >
-              </div>
-            </li>
-          </ul>
+    <header
+      class="bg-gray-600 text-white"
+      style="background: url(https://www.shutterstock.com/image-illustration/cybersecurity-privacy-concepts-protect-data-600nw-2586909929.jpg) no-repeat center; background-size: cover;"
+    >
+      <div class="bg-gray-900/90">
+        <div class="container mx-auto">
+          <nav class="flex justify-between p-4 items-center">
+            <h1 class="flex gap-1 items-center">
+              <img src="/logo.png" class="w-16 h-16" /><span
+                class="font-bold text-lg">MotherLandExams</span
+              >
+            </h1>
+            <div class="hidden md:block">
+              <ul class="flex gap-4 font-bold tracking-wider">
+                <li>
+                  <a
+                    href="#about"
+                    class="hover:bg-indigo-800 hover:text-white transition p-2 rounded"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#services"
+                    class="hover:bg-indigo-800 hover:text-white p-2 transition rounded"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#facilities"
+                    class="hover:bg-indigo-800 hover:text-white p-2 transition rounded"
+                    >Facilities</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="p-4">
+            <ul>
+              <li style="min-height: 400px;" class="flex items-center">
+                <div class="space-y-4">
+                  <h2 class="text-3xl md:text-5xl font-bold">
+                    Innovation | Transparency | Integrity
+                  </h2>
+                  <a
+                    href="#about"
+                    class="bg-indigo-700 text-white inline-block px-8 py-4 text-lg rounded"
+                    >Read More</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
-    <section id="services" class="py-10 px-4 container mx-auto">
-      <h2 class="text-3xl md:text-5xl text-center font-bold">
-        🚀 What We Offer
-      </h2>
+    <section id="services" class="py-16 px-4 container mx-auto">
+      <div class="text-center space-y-4">
+        <h2 class="text-3xl md:text-5xl font-bold">What We Offer</h2>
+        <p>
+          From world-class infrastructure to high tech manpower and consultancy,
+          we offer a wide range of services.
+        </p>
+      </div>
       <ul class="grid md:grid-cols-2 gap-8 mt-16">
         {
           what_we_offser.map(({ title, description, benefit }) => (
@@ -210,41 +236,50 @@ const why_clients_love_us = [
               <div class="max-w-xl space-y-4">
                 <h3 class="text-xl md:text-2xl font-bold">{title}</h3>
                 <p>{description}</p>
-                <p class="text-indigo-800 font-semibold">{benefit}</p>
+                {benefit ? (
+                  <p class="text-sky-800 font-semibold text-sm">{benefit}</p>
+                ) : null}
               </div>
             </li>
           ))
         }
       </ul>
     </section>
-    <section id="about" class="py-10 px-4 container mx-auto">
-      <h2 class="text-3xl md:text-5xl text-center font-bold">
-        🌟 Why Choose Motherland?<h2>
-          <ul class="grid md:grid-cols-2 gap-8 mt-16">
-            {
-              why_choose_us.map(({ title, description }) => (
-                <li class="bg-indigo-50 hover:bg-indigo-100 p-6 rounded-lg hover:translate-y-[-4px] transition">
-                  <div class="max-w-xl space-y-4">
-                    <h3 class="text-xl md:text-2xl font-bold">{title}</h3>
-                    <p>{description}</p>
-                  </div>
-                </li>
-              ))
-            }
-          </ul>
+    <section id="about" class="py-12 px-4 bg-sky-50">
+      <div class="container mx-auto">
+        <h2 class="text-3xl md:text-5xl text-center font-bold">
+          Why Choose Motherland?
         </h2>
-      </h2>
+        <ul class="grid md:grid-cols-2 gap-8 mt-16">
+          {
+            why_choose_us.map(({ title, description }) => (
+              <li class="bg-white p-6 rounded-r-lg hover:translate-y-[-4px] transition border-l-8 border-t border-r border-b border-sky-300">
+                <div class="max-w-xl space-y-2">
+                  <h3 class="text-xl md:text-2xl font-bold text-sky-900">
+                    {title}
+                  </h3>
+                  <p>{description}</p>
+                </div>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
     </section>
-    <section id="vision" class="py-10 px-4 container mx-auto">
-      <h2 class="text-3xl md:text-5xl text-center font-bold">📌 Our Vision</h2>
-      <p>{our_vision}</p>
+    <section id="vision" class="py-12 bg-indigo-800 text-white">
+      <div class="px-4 container mx-auto space-y-8 text-center max-w-4xl">
+        <h2 class="text-3xl md:text-5xl text-center font-bold">
+          <span class="border-b-4 inline-block px-4 pb-2">Our Vision</span>
+        </h2>
+        <p class="text-xl tracking-wide">{our_vision}</p>
+      </div>
     </section>
-    <section id="facilities" class="py-10 px-4 container mx-auto">
+    <section id="facilities" class="py-12 px-4 container mx-auto">
       <div class="space-y-4 mb-8">
         <h2 class="text-3xl md:text-5xl text-center font-bold">
-          🏢 Our Exam Centre Facilities
+          Our Exam Centre Facilities
         </h2>
-        <p class="max-w-4xl mx-auto text-center">
+        <p class="max-w-4xl mx-auto text-center text-lg">
           At Motherland Digital Exam Centres, we ensure a smooth, secure, and
           stress-free experience for both candidates and organizations. Every
           detail is carefully planned so that nothing feels missing.
@@ -289,41 +324,111 @@ const why_clients_love_us = [
       </ul>
     </section>
     <section id="advanced_infrastructure" class="py-10 px-4 container mx-auto">
-      <h2 class="text-3xl md:text-5xl text-center font-bold">💻 Advanced Exam Infrastructure</h2>
+      <h2 class="text-3xl md:text-5xl text-center font-bold">
+        💻 Advanced Exam Infrastructure
+      </h2>
       <ul class="grid grid-cols-3 gap-4 mt-16">
-        {advanced_infrastructure.map(({ title, description }) => (
-        <li class="space-y-2">
-          <h3 class="text-xl font-bold">{title}</h3>
-          <p>{description}</p>
-        </li>
-        ))}
+        {
+          advanced_infrastructure.map(({ title, description }) => (
+            <li class="space-y-2">
+              <h3 class="text-xl font-bold">{title}</h3>
+              <p>{description}</p>
+            </li>
+          ))
+        }
       </ul>
     </section>
-    <section id="extra_facilities_for_clients" class="py-10 px-4 container mx-auto">
-      <h2 class="text-3xl md:text-5xl text-center font-bold">🤝 Extra Facilities for Clients</h2>
+    <section
+      id="extra_facilities_for_clients"
+      class="py-10 px-4 container mx-auto"
+    >
+      <h2 class="text-3xl md:text-5xl text-center font-bold">
+        🤝 Extra Facilities for Clients
+      </h2>
       <ul class="grid grid-cols-3 gap-4 mt-16">
-        {extra_facilities_for_clients.map(({ title, description }) => (
-        <li class="space-y-2">
-          <h3 class="text-xl font-bold">{title}</h3>
-          <p>{description}</p>
-        </li>
-        ))}
+        {
+          extra_facilities_for_clients.map(({ title, description }) => (
+            <li class="space-y-2">
+              <h3 class="text-xl font-bold">{title}</h3>
+              <p>{description}</p>
+            </li>
+          ))
+        }
       </ul>
     </section>
     <section id="why_clients_love_us" class="py-10 px-4 container mx-auto">
-      <h2 class="text-3xl md:text-5xl text-center font-bold">🌟 Why Candidates & Clients Trust Us</h2>
+      <h2 class="text-3xl md:text-5xl text-center font-bold">
+        🌟 Why Candidates & Clients Trust Us
+      </h2>
       <ul class="grid grid-cols-3 gap-4 mt-16">
-        {why_clients_love_us.map((item) => (
-        <li class="space-y-2">
-          <h3 class="text-xl font-bold">{item}</h3>
-        </li>
-        ))}
+        {
+          why_clients_love_us.map((item) => (
+            <li class="space-y-2">
+              <h3 class="text-xl font-bold">{item}</h3>
+            </li>
+          ))
+        }
       </ul>
     </section>
-    <footer class="bg-gray-900 text-white py-10">
-      <div  class="container mx-auto px-4">
-        MotherLandExams
+    <section
+      id="contact_us"
+      class="text-white"
+      style="background: url(https://redtreewebdesign.com/wp-content/uploads/2020/12/contact-form-7-attack-redtreeFeatured.jpg) no-repeat center; background-size: cover;"
+    >
+      <div class="bg-gray-900/90 py-24">
+        <div class="container mx-auto px-4">
+          <div class="space-y-4 text-center">
+            <h2 class="text-4xl font-bold">Contact Us</h2>
+            <p class="text-lg">
+              We'd love to hear from you. Please fill out the form below and hit
+              "Send Enquiry"
+            </p>
+          </div>
+          <div class="grid md:grid-cols-2 gap-8 mt-12 max-w-6xl mx-auto">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.1891713008085!2d75.7342243!3d26.960908099999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db3061d283cf1%3A0x5d95227965775205!2sMotherland%20Progressive%20Public%20School%20Online%20Examination%20Centre!5e0!3m2!1sen!2sin!4v1756032647966!5m2!1sen!2sin"
+              class="w-full"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div>
+              <form name="contact" netlify class="flex flex-col gap-4">
+                <h3 class="text-2xl font-bold">Send Enquiry to Us</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <input type="text" name="name" placeholder="Your Name" />
+                  <input type="email" name="email" placeholder="Your Email" />
+                </div>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <input
+                      type="text"
+                      name="contact_number"
+                      placeholder="Contact Number"
+                      class="w-full"
+                    />
+                  </div>
+                  <textarea name="purpose" placeholder="I'd like to"></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="bg-indigo-800 text-white text-center px-4 py-6 text-lg font-bold"
+                  >Send Enquiry</button
+                >
+                <p>
+                  By registering, you agree to our <a href="#"
+                    >Terms & Conditions.</a
+                  >
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
+    <footer class="py-10 border-t">
+      <div class="container mx-auto px-4">MotherLandExams</div>
     </footer>
   </body>
 </html>
