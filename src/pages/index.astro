@@ -1,16 +1,106 @@
 ---
-import "../styles/global.css"
+import "../styles/global.css";
+const what_we_offser = [
+  {
+    title: "World-Class Testing Infrastructure",
+    description:
+      "State-of-the-art CBT (Computer Based Test) centers equipped with high-performance systems, 24×7 monitoring, and biometric-enabled security.",
+    benefit:
+      "Designed for government bodies, corporates, and universities to conduct exams without stress.",
+  },
+  {
+    title: "Multi-Venue Exam Management",
+    description:
+      "Nationwide network of dedicated exam centers, making large-scale recruitment drives and university assessments seamless and reliable.",
+    benefit:
+      "Real-time coordination and AI-driven invigilation tools ensure fairness and transparency.",
+  },
+  {
+    title: "Custom Captive Centers",
+    description:
+      "Fully branded & customized exam centers under your organization’s name.",
+    benefit:
+      "Complete technical staff support – you just focus on the candidates, we manage the rest.",
+  },
+  {
+    title: "Tech Manpower & IT Consulting",
+    description:
+      "Skilled experts in Microsoft Dynamics, Cloud Solutions, Power BI, and Data Migration.",
+    benefit:
+      "Financial consultants, Chartered Accountants, and IT specialists available on-demand.",
+  },
+  {
+    title: "Digital Learning & Training Solutions (Extra Attractive Point)",
+    description:
+      "Beyond just exams, Motherland Digital also provides digital learning environments, enabling upskilling, online classrooms, and corporate training with interactive platforms.",
+  },
+  {
+    title: "Smart Reporting & Analytics (Extra Attractive Point)",
+    description:
+      "Get real-time dashboards, AI-driven insights, and fraud detection alerts.",
+    benefit:
+      "Simplify decision-making with data-backed reports at your fingertips.",
+  },
+];
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1 class="text-xl">Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Motherland Exams</title>
+  </head>
+  <body>
+    <header class="bg-indigo-50">
+      <div class="container mx-auto">
+        <nav class="flex justify-between p-4">
+          <h1 class="flex gap-1 items-center">
+            <img src="/logo.png" class="w-10 h-10" /><span>MotherLandExams</span
+            >
+          </h1>
+          <ul class="flex gap-2">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+          </ul>
+        </nav>
+        <div class="p-4">
+          <ul>
+            <li style="min-height: 200px;" class="flex items-center">
+              <div class="space-y-4">
+                <h2 class="text-4xl font-bold">
+                  Integrity I Capability I Security
+                </h2>
+                <a
+                  href="#about"
+                  class="bg-indigo-800 text-white inline-block px-4 py-2"
+                  >Read More</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section id="services" class="py-10 px-4 container mx-auto">
+      <h2 class="text-3xl md:text-5xl text-center font-bold">
+        🚀 What We Offer<h2>
+          <ul class="grid md:grid-cols-2 gap-8 mt-16">
+            {
+              what_we_offser.map(({ title, description, benefit }) => (
+                <li class="bg-indigo-50 hover:bg-indigo-100 p-6 rounded-lg hover:translate-y-[-4px] transition">
+                  <div class="max-w-xl space-y-4">
+                    <h3 class="text-xl md:text-2xl font-bold">{title}</h3>
+                    <p>{description}</p>
+                    <p class="text-indigo-800 font-semibold">{benefit}</p>
+                  </div>
+                </li>
+              ))
+            }
+          </ul>
+        </h2>
+      </h2>
+    </section>
+  </body>
 </html>
