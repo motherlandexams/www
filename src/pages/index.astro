@@ -218,7 +218,7 @@ const why_clients_love_us = [
       </div>
     </header>
     <section id="services" class="py-16 px-4 container mx-auto">
-      <div class="text-center space-y-4">
+      <div class="space-y-4 md:text-center">
         <h2 class="text-3xl md:text-5xl font-bold">What We Offer</h2>
         <p>
           From world-class infrastructure to high tech manpower and consultancy,
@@ -241,9 +241,9 @@ const why_clients_love_us = [
         }
       </ul>
     </section>
-    <section id="about" class="py-12 px-4 bg-sky-50">
+    <section id="about" class="py-32 px-4 bg-sky-50">
       <div class="container mx-auto">
-        <h2 class="text-3xl md:text-5xl text-center font-bold">
+        <h2 class="text-3xl md:text-5xl md:text-center font-bold">
           Why Choose Motherland?
         </h2>
         <ul class="grid md:grid-cols-2 gap-8 mt-16">
@@ -262,13 +262,14 @@ const why_clients_love_us = [
         </ul>
       </div>
     </section>
-    <section id="vision" class="py-12 bg-indigo-800 md:text-center text-white">
-      <div class="px-4 container mx-auto space-y-8 max-w-4xl">
-        <h2 class="text-3xl md:text-5xl font-bold">
-          <span class="border-b-4 inline-block md:px-4 pb-2">Our Vision</span>
-        </h2>
-        <p class="text-xl tracking-wide">{our_vision}</p>
-      </div>
+    <section id="vision" class="md:text-center text-white relative">
+    <div class="w-full h-full absolute overflow-visible"> <div class="relative h-full w-full left-0 top-0 bg-indigo-800" style="transform-origin:50%;transform:skewY(-4deg)"></div> </div>
+    <div class="px-4 py-32 -mt-16 container mx-auto space-y-8 max-w-4xl relative">
+      <h2 class="text-3xl md:text-5xl font-bold">
+        <span class="border-b-4 inline-block md:px-4 pb-2">Our Vision</span>
+      </h2>
+      <p class="text-xl tracking-wide">{our_vision}</p>
+    </div>
     </section>
     <section id="facilities" class="py-12 px-4 container mx-auto">
       <div class="space-y-4 mb-8">
@@ -346,9 +347,10 @@ const why_clients_love_us = [
     </section>
     <section
       id="advanced_infrastructure"
-      class="py-16 px-4 bg-yellow-700 text-white"
+      class="text-white relative"
     >
-    <div class="container mx-auto">
+    <div class="w-full h-full absolute overflow-visible"> <div class="relative h-full w-full left-0 top-0 bg-yellow-700" style="transform-origin:50%;transform:skewY(-4deg)"></div> </div>
+    <div class="container py-32  mx-auto px-4 relative">
       <h2 class="text-3xl md:text-5xl md:text-center font-bold">
         Advanced Exam Infrastructure
       </h2>
@@ -366,30 +368,37 @@ const why_clients_love_us = [
     </section>
     <section
       id="extra_facilities_for_clients"
-      class="py-10 px-4 container mx-auto"
+      class="py-32 px-4 container mx-auto"
     >
-      <h2 class="text-3xl md:text-5xl text-center font-bold">
-        🤝 Extra Facilities for Clients
+      <h2 class="text-3xl md:text-5xl md:text-center font-bold">
+        Extra Facilities for Clients
       </h2>
-      <ul class="grid grid-cols-3 gap-4 mt-16">
+      <ul class="grid md:grid-cols-3 gap-4 mt-16">
         {
           extra_facilities_for_clients.map(({ title, description }) => (
             <li class="space-y-2">
-              <h3 class="text-xl font-bold">{title}</h3>
-              <p>{description}</p>
+              <h3 class="text-xl font-bold">
+                <span class="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-2 before:bg-pink-500">
+                  <span class="relative text-white dark:text-gray-950">{title}</span>
+                </span>
+              </h3>
+              <p class="text-lg">{description}</p>
             </li>
           ))
         }
       </ul>
     </section>
-    <section id="why_clients_love_us" class="py-10 px-4 container mx-auto">
-      <h2 class="text-3xl md:text-5xl text-center font-bold">
-        🌟 Why Candidates & Clients Trust Us
+    <section id="why_clients_love_us" class="py-10 px-4 container mx-auto border-t-8 border-pink-300">
+      <h2 class="text-3xl md:text-5xl md:text-center font-bold">
+        Why Candidates & Clients Trust Us
       </h2>
-      <ul class="grid grid-cols-3 gap-4 mt-16">
+      <ul class="flex flex-col gap-4 mt-16 max-w-xl mx-auto bg-pink-100 p-8 rounded-lg">
         {
           why_clients_love_us.map((item) => (
-            <li class="space-y-2">
+            <li class="space-y-2 flex gap-2 text-pink-800">
+              <div class="pt-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">  <path d="M21.801 10A10 10 0 1 1 17 3.335"></path> <path d="m9 11 3 3L22 4"></path>  </svg>
+              </div>
               <h3 class="text-xl font-bold">{item}</h3>
             </li>
           ))
