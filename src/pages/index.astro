@@ -42,6 +42,122 @@ const what_we_offser = [
       "Simplify decision-making with data-backed reports at your fingertips.",
   },
 ];
+
+const why_choose_us = [
+  {
+    title: "Innovation First",
+    description:
+      "We use AI, cloud, and automation to deliver future-ready solutions.",
+  },
+  {
+    title: "Security Guaranteed",
+    description:
+      "Advanced encryption, CCTV, and biometric layers ensure data safety.",
+  },
+  {
+    title: "Pan-India Presence",
+    description:
+      "Scalable infrastructure that supports thousands of candidates at once.",
+  },
+  {
+    title: "Integrity & Transparency",
+    description:
+      "Trusted by institutions and companies for fair, unbiased processes.",
+  },
+  {
+    title: "End-to-End Partner ",
+    description: "From exam setup to result analysis, we manage it all.",
+  },
+];
+
+const our_vision =
+  "To make Motherland Digital the most reliable digital ecosystem in India, where technology blends with trust to create a smarter, transparent, and future-ready nation.";
+
+const infrastructure = [
+  {
+    title: "Secure Vehicle Parking",
+    items: [
+      "Spacious & well-organized parking area with CCTV monitoring.",
+      "Dedicated space for two-wheelers and four-wheelers.",
+    ],
+  },
+  {
+    title: "Candidate Waiting Area",
+    items: [
+      "Comfortable seating arrangements with fans/AC, clean drinking water, and restrooms.",
+      "Digital display screens for announcements and exam updates.",
+    ],
+  },
+  {
+    title: "Bag & Belongings Counter",
+    items: [
+      "Safe lockers/counters for keeping mobile phones, bags, or personal items during exams.",
+    ],
+  },
+  {
+    title: "Medical & First-Aid Support",
+    items: [
+      "First-aid kits and tie-ups with nearby hospitals for emergency care.",
+      "On-site medical assistance for candidates in need.",
+    ],
+  },
+  {
+    title: "Hygiene & Cleanliness",
+    items: [
+      "Regular sanitization of labs and common areas.",
+      "Separate washrooms for male and female candidates.",
+    ],
+  },
+];
+
+const advanced_infrastructure = [
+  {
+    title: "High-Performance Systems",
+    description: "Latest computers with fast processors & large screens.",
+  },
+  {
+    title: "Power Backup",
+    description: "Uninterrupted power supply (UPS + generator backup).",
+  },
+  {
+    title: "High-Speed Internet",
+    description: "Dedicated bandwidth for smooth online exams.",
+  },
+  {
+    title: "Biometric & CCTV Security",
+    description: "Prevents impersonation, cheating, and ensures 100% transparency.",
+  },
+  {
+    title: "Fire Safety Measures",
+    description: "Fire extinguishers, alarms, and evacuation plans in place.",
+  },
+];
+
+const extra_facilities_for_clients = [
+{
+title: "Control Room Access",
+description: "Live monitoring for exam organizers."
+}  ,
+{
+title: "Pan-India Support",
+description: "Ability to manage multi-location exams at once."
+}  ,
+{
+title: "Data Security",
+description: "Encrypted storage & transmission of exam data."
+}  ,
+{
+title: "24×7 Tech Support Team",
+description: "Engineers & IT staff available throughout the exam session."
+}  ,
+]
+
+const why_clients_love_us = [
+"Discipline maintained by experienced invigilators.",
+"Stress-free environment with comfortable amenities.",
+"Transparent, secure, and technology-driven exam process.",
+"All-in-one center — nothing is missing for candidates or organizers."
+]
 ---
 
 <html lang="en">
@@ -85,15 +201,32 @@ const what_we_offser = [
     </header>
     <section id="services" class="py-10 px-4 container mx-auto">
       <h2 class="text-3xl md:text-5xl text-center font-bold">
-        🚀 What We Offer<h2>
+        🚀 What We Offer
+      </h2>
+      <ul class="grid md:grid-cols-2 gap-8 mt-16">
+        {
+          what_we_offser.map(({ title, description, benefit }) => (
+            <li class="bg-indigo-50 hover:bg-indigo-100 p-6 rounded-lg hover:translate-y-[-4px] transition">
+              <div class="max-w-xl space-y-4">
+                <h3 class="text-xl md:text-2xl font-bold">{title}</h3>
+                <p>{description}</p>
+                <p class="text-indigo-800 font-semibold">{benefit}</p>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+    <section id="about" class="py-10 px-4 container mx-auto">
+      <h2 class="text-3xl md:text-5xl text-center font-bold">
+        🌟 Why Choose Motherland?<h2>
           <ul class="grid md:grid-cols-2 gap-8 mt-16">
             {
-              what_we_offser.map(({ title, description, benefit }) => (
+              why_choose_us.map(({ title, description }) => (
                 <li class="bg-indigo-50 hover:bg-indigo-100 p-6 rounded-lg hover:translate-y-[-4px] transition">
                   <div class="max-w-xl space-y-4">
                     <h3 class="text-xl md:text-2xl font-bold">{title}</h3>
                     <p>{description}</p>
-                    <p class="text-indigo-800 font-semibold">{benefit}</p>
                   </div>
                 </li>
               ))
@@ -102,5 +235,95 @@ const what_we_offser = [
         </h2>
       </h2>
     </section>
+    <section id="vision" class="py-10 px-4 container mx-auto">
+      <h2 class="text-3xl md:text-5xl text-center font-bold">📌 Our Vision</h2>
+      <p>{our_vision}</p>
+    </section>
+    <section id="facilities" class="py-10 px-4 container mx-auto">
+      <div class="space-y-4 mb-8">
+        <h2 class="text-3xl md:text-5xl text-center font-bold">
+          🏢 Our Exam Centre Facilities
+        </h2>
+        <p class="max-w-4xl mx-auto text-center">
+          At Motherland Digital Exam Centres, we ensure a smooth, secure, and
+          stress-free experience for both candidates and organizations. Every
+          detail is carefully planned so that nothing feels missing.
+        </p>
+      </div>
+      <ul class="space-y-8">
+        <li class="space-y-4">
+          <h3 class="text-4xl font-bold">
+            Experienced & Knowledgeable Invigilators
+          </h3>
+          <p>
+            Our invigilator team includes ex-servicemen and experienced
+            professionals trained in exam protocols.
+          </p>
+          <p>
+            They maintain discipline, fairness, and transparency in every exam.
+          </p>
+          <p>
+            Candidates can feel safe and supported, while organizers can trust
+            the integrity of the process.
+          </p>
+        </li>
+        <li class="space-y-4">
+          <h3 class="text-4xl font-bold">
+            Comfortable Infrastructure for Candidates
+          </h3>
+          <ul class="grid grid-cols-3 gap-4">
+            {
+              infrastructure.map(({ title, items }) => (
+                <li class="p-4 rounded border border-gray-300 hover:bg-indigo-50 space-y-4">
+                  <h4 class="text-md font-bold">{title}</h4>
+                  <div class="space-y-2">
+                    {items.map((item) => (
+                      <p>{item}</p>
+                    ))}
+                  </div>
+                </li>
+              ))
+            }
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section id="advanced_infrastructure" class="py-10 px-4 container mx-auto">
+      <h2 class="text-3xl md:text-5xl text-center font-bold">💻 Advanced Exam Infrastructure</h2>
+      <ul class="grid grid-cols-3 gap-4 mt-16">
+        {advanced_infrastructure.map(({ title, description }) => (
+        <li class="space-y-2">
+          <h3 class="text-xl font-bold">{title}</h3>
+          <p>{description}</p>
+        </li>
+        ))}
+      </ul>
+    </section>
+    <section id="extra_facilities_for_clients" class="py-10 px-4 container mx-auto">
+      <h2 class="text-3xl md:text-5xl text-center font-bold">🤝 Extra Facilities for Clients</h2>
+      <ul class="grid grid-cols-3 gap-4 mt-16">
+        {extra_facilities_for_clients.map(({ title, description }) => (
+        <li class="space-y-2">
+          <h3 class="text-xl font-bold">{title}</h3>
+          <p>{description}</p>
+        </li>
+        ))}
+      </ul>
+    </section>
+    <section id="why_clients_love_us" class="py-10 px-4 container mx-auto">
+      <h2 class="text-3xl md:text-5xl text-center font-bold">🌟 Why Candidates & Clients Trust Us</h2>
+      <ul class="grid grid-cols-3 gap-4 mt-16">
+        {why_clients_love_us.map((item) => (
+        <li class="space-y-2">
+          <h3 class="text-xl font-bold">{item}</h3>
+        </li>
+        ))}
+      </ul>
+    </section>
+    <footer class="bg-gray-900 text-white py-10">
+      <div  class="container mx-auto px-4">
+        MotherLandExams
+      </div>
+    </footer>
   </body>
 </html>
